@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/WeightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trọng lượng (kg)" />
+        <EditText
+            android:id="@+id/WeightInputEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/HeightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều cao (mét)" />
+        <EditText
+            android:id="@+id/HeightInputEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+    <Button
+        android:id="@+id/CalculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính BMI" />
+
+    <TableRow>
+        <TextView
+            android:id="@+id/BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI" />
+        <TextView
+            android:id="@+id/BMIEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="numberDecimal"
+            android:enabled="false" />
+    </TableRow>
+
+</TableLayout>
